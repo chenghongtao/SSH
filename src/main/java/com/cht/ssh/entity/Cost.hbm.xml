@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.cht.ssh.entity.Cost" table="cost">
+		<id name="cost_id" type="integer" >
+			<generator class="assigned">
+			</generator>
+		</id>
+		<property name="name" type="string"></property>
+		<property name="base_duration" type="integer"></property>
+		<property name="base_cost" type="double"></property>
+		<property name="unit_cost" type="double"></property>
+		<property name="status" type="string"></property>
+		<property name="descr" type="string"></property>
+		<property name="creatime" type="date"></property>
+		<property name="startime" type="date"></property>
+		<property name="cost_type" type="string"></property>
+
+	</class>
+</hibernate-mapping>
